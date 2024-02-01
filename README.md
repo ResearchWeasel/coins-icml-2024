@@ -6,13 +6,7 @@ ICML 2024 conference submission
 
 ## Abstract
 
-We present a new method, called COINs for COmmunity INformed graph embeddings, to enhance the efficiency of knowledge
-graph models for link prediction and query answering. COINs uses a community-detection-based graph data augmentation and
-a two-step prediction pipeline: we first achieve node localization through community prediction, and subsequently, we
-further localize within the predicted community. We establish theoretical criteria to evaluate our method in our
-specific context and establish a direct expression of the reduction in time complexity. We empirically demonstrate an
-important scalability-performance trade-off where we achieve a median per-sample relative error to the baseline of
-0.247 (MAD 7.8667) with a median per-sample cost reduction factor of 13.3038 (MAD 91.1975) on a single-CPU-GPU machine.
+We present a new method, called COINs for COmmunity INformed graph embeddings, to enhance the efficiency of knowledge graph models for link prediction and query answering. COINs uses a community-detection-based graph data augmentation and a two-step prediction pipeline: we first achieve node localization through community prediction, and subsequently, we further localize within the predicted community. We establish theoretical criteria to evaluate our method in our specific context and establish a direct expression of the reduction in time complexity. We empirically demonstrate an important scalability-performance trade-off where for a median relative per-sample drop in performance of 0.247, we obtain a median speed-up factor of 13.3038 on a single-CPU-GPU machine.
 
 ## Instructions
 
