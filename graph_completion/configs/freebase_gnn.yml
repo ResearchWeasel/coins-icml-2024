@@ -1,0 +1,32 @@
+seed: 123456789
+device: cuda:0
+val_size: 0.01
+test_size: 0.02
+mini_batch_size: 64
+lr: 1.0e-3
+weight_decay: 1.0e-6
+val_patience: 50
+val_tolerance: 1.0e-4
+max_epochs: 50
+validation_freq: 100
+checkpoint_freq: 10000
+algorithm: kbgat
+leiden_resolution: 5.0e-3
+loader_hpars:
+  dataset_name: freebase
+  sample_source: smore
+  sampler_hpars:
+    num_negative_samples: 64
+    num_neighbours: 10
+    random_walk_length: 10
+    context_radius: 2
+    pagerank_importances: true
+    walks_relation_specific: true
+embedder_hpars:
+  embedding_dim: 100
+link_ranker_hpars:
+  algorithm: kbgat
+  sacn_num_conv_channels: 300
+embedding_loss_hpars:
+  margin: 9.0
+  rotate_alpha: 1.0

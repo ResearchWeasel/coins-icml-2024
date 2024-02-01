@@ -1,0 +1,506 @@
+2023-09-19 21:37:20 INFO     Model: DistMult
+2023-09-19 21:37:20 INFO     Data Path: data/nell
+2023-09-19 21:37:20 INFO     #entity: 75492
+2023-09-19 21:37:20 INFO     #relation: 200
+2023-09-19 21:37:20 INFO     #train: 149678
+2023-09-19 21:37:20 INFO     #valid: 543
+2023-09-19 21:37:20 INFO     #test: 3992
+2023-09-19 21:37:20 INFO     Model Parameter Configuration:
+2023-09-19 21:37:20 INFO     Parameter gamma: torch.Size([1]), require_grad = False
+2023-09-19 21:37:20 INFO     Parameter embedding_range: torch.Size([1]), require_grad = False
+2023-09-19 21:37:20 INFO     Parameter entity_embedding: torch.Size([75492, 100]), require_grad = True
+2023-09-19 21:37:20 INFO     Parameter relation_embedding: torch.Size([200, 100]), require_grad = True
+2023-09-19 21:37:25 INFO     Ramdomly Initializing DistMult Model...
+2023-09-19 21:37:25 INFO     Start Training...
+2023-09-19 21:37:25 INFO     init_step = 0
+2023-09-19 21:37:25 INFO     batch_size = 256
+2023-09-19 21:37:25 INFO     negative_adversarial_sampling = 0
+2023-09-19 21:37:25 INFO     hidden_dim = 100
+2023-09-19 21:37:25 INFO     gamma = 1.000000
+2023-09-19 21:37:25 INFO     negative_adversarial_sampling = False
+2023-09-19 21:37:25 INFO     learning_rate = 0
+2023-09-19 21:37:26 INFO     Training average regularization at step 0: 0.000051
+2023-09-19 21:37:26 INFO     Training average positive_sample_loss at step 0: 0.693151
+2023-09-19 21:37:26 INFO     Training average negative_sample_loss at step 0: 0.693147
+2023-09-19 21:37:26 INFO     Training average loss at step 0: 0.693200
+2023-09-19 21:37:26 INFO     Evaluating on Valid Dataset...
+2023-09-19 21:37:27 INFO     Evaluating the model... (0/136)
+2023-09-19 21:37:48 INFO     Valid MRR at step 0: 0.000193
+2023-09-19 21:37:48 INFO     Valid MR at step 0: 37070.134438
+2023-09-19 21:37:48 INFO     Valid HITS@1 at step 0: 0.000000
+2023-09-19 21:37:48 INFO     Valid HITS@3 at step 0: 0.000000
+2023-09-19 21:37:48 INFO     Valid HITS@10 at step 0: 0.000000
+2023-09-19 21:37:51 INFO     Training average regularization at step 100: 0.000028
+2023-09-19 21:37:51 INFO     Training average positive_sample_loss at step 100: 0.693146
+2023-09-19 21:37:51 INFO     Training average negative_sample_loss at step 100: 0.693147
+2023-09-19 21:37:51 INFO     Training average loss at step 100: 0.693174
+2023-09-19 21:37:55 INFO     Training average regularization at step 200: 0.000014
+2023-09-19 21:37:55 INFO     Training average positive_sample_loss at step 200: 0.693132
+2023-09-19 21:37:55 INFO     Training average negative_sample_loss at step 200: 0.693147
+2023-09-19 21:37:55 INFO     Training average loss at step 200: 0.693153
+2023-09-19 21:37:59 INFO     Training average regularization at step 300: 0.000016
+2023-09-19 21:37:59 INFO     Training average positive_sample_loss at step 300: 0.692793
+2023-09-19 21:37:59 INFO     Training average negative_sample_loss at step 300: 0.693142
+2023-09-19 21:37:59 INFO     Training average loss at step 300: 0.692984
+2023-09-19 21:38:03 INFO     Training average regularization at step 400: 0.000061
+2023-09-19 21:38:03 INFO     Training average positive_sample_loss at step 400: 0.689634
+2023-09-19 21:38:03 INFO     Training average negative_sample_loss at step 400: 0.693051
+2023-09-19 21:38:03 INFO     Training average loss at step 400: 0.691403
+2023-09-19 21:38:06 INFO     Training average regularization at step 500: 0.000262
+2023-09-19 21:38:06 INFO     Training average positive_sample_loss at step 500: 0.678212
+2023-09-19 21:38:06 INFO     Training average negative_sample_loss at step 500: 0.692554
+2023-09-19 21:38:06 INFO     Training average loss at step 500: 0.685645
+2023-09-19 21:38:10 INFO     Training average regularization at step 600: 0.000772
+2023-09-19 21:38:10 INFO     Training average positive_sample_loss at step 600: 0.656446
+2023-09-19 21:38:10 INFO     Training average negative_sample_loss at step 600: 0.691310
+2023-09-19 21:38:10 INFO     Training average loss at step 600: 0.674650
+2023-09-19 21:38:14 INFO     Training average regularization at step 700: 0.001773
+2023-09-19 21:38:14 INFO     Training average positive_sample_loss at step 700: 0.620606
+2023-09-19 21:38:14 INFO     Training average negative_sample_loss at step 700: 0.688539
+2023-09-19 21:38:14 INFO     Training average loss at step 700: 0.656345
+2023-09-19 21:38:18 INFO     Training average regularization at step 800: 0.003278
+2023-09-19 21:38:18 INFO     Training average positive_sample_loss at step 800: 0.583770
+2023-09-19 21:38:18 INFO     Training average negative_sample_loss at step 800: 0.684112
+2023-09-19 21:38:18 INFO     Training average loss at step 800: 0.637219
+2023-09-19 21:38:21 INFO     Training average regularization at step 900: 0.005139
+2023-09-19 21:38:21 INFO     Training average positive_sample_loss at step 900: 0.544714
+2023-09-19 21:38:21 INFO     Training average negative_sample_loss at step 900: 0.677030
+2023-09-19 21:38:21 INFO     Training average loss at step 900: 0.616011
+2023-09-19 21:38:25 INFO     Training average regularization at step 1000: 0.007240
+2023-09-19 21:38:25 INFO     Training average positive_sample_loss at step 1000: 0.507847
+2023-09-19 21:38:25 INFO     Training average negative_sample_loss at step 1000: 0.668420
+2023-09-19 21:38:25 INFO     Training average loss at step 1000: 0.595374
+2023-09-19 21:38:25 INFO     Evaluating on Valid Dataset...
+2023-09-19 21:38:26 INFO     Evaluating the model... (0/136)
+2023-09-19 21:38:45 INFO     Valid MRR at step 1000: 0.412447
+2023-09-19 21:38:45 INFO     Valid MR at step 1000: 4658.430939
+2023-09-19 21:38:45 INFO     Valid HITS@1 at step 1000: 0.355433
+2023-09-19 21:38:45 INFO     Valid HITS@3 at step 1000: 0.449355
+2023-09-19 21:38:45 INFO     Valid HITS@10 at step 1000: 0.500921
+2023-09-19 21:38:49 INFO     Training average regularization at step 1100: 0.009493
+2023-09-19 21:38:49 INFO     Training average positive_sample_loss at step 1100: 0.474580
+2023-09-19 21:38:49 INFO     Training average negative_sample_loss at step 1100: 0.658210
+2023-09-19 21:38:49 INFO     Training average loss at step 1100: 0.575888
+2023-09-19 21:38:52 INFO     Training average regularization at step 1200: 0.011808
+2023-09-19 21:38:52 INFO     Training average positive_sample_loss at step 1200: 0.433144
+2023-09-19 21:38:52 INFO     Training average negative_sample_loss at step 1200: 0.647299
+2023-09-19 21:38:52 INFO     Training average loss at step 1200: 0.552029
+2023-09-19 21:38:56 INFO     Training average regularization at step 1300: 0.014445
+2023-09-19 21:38:56 INFO     Training average positive_sample_loss at step 1300: 0.374676
+2023-09-19 21:38:56 INFO     Training average negative_sample_loss at step 1300: 0.629209
+2023-09-19 21:38:56 INFO     Training average loss at step 1300: 0.516387
+2023-09-19 21:39:00 INFO     Training average regularization at step 1400: 0.017357
+2023-09-19 21:39:00 INFO     Training average positive_sample_loss at step 1400: 0.352058
+2023-09-19 21:39:00 INFO     Training average negative_sample_loss at step 1400: 0.612337
+2023-09-19 21:39:00 INFO     Training average loss at step 1400: 0.499554
+2023-09-19 21:39:03 INFO     Training average regularization at step 1500: 0.020385
+2023-09-19 21:39:03 INFO     Training average positive_sample_loss at step 1500: 0.329160
+2023-09-19 21:39:03 INFO     Training average negative_sample_loss at step 1500: 0.589684
+2023-09-19 21:39:03 INFO     Training average loss at step 1500: 0.479807
+2023-09-19 21:39:07 INFO     Training average regularization at step 1600: 0.023502
+2023-09-19 21:39:07 INFO     Training average positive_sample_loss at step 1600: 0.316771
+2023-09-19 21:39:07 INFO     Training average negative_sample_loss at step 1600: 0.569052
+2023-09-19 21:39:07 INFO     Training average loss at step 1600: 0.466414
+2023-09-19 21:39:10 INFO     Training average regularization at step 1700: 0.026640
+2023-09-19 21:39:10 INFO     Training average positive_sample_loss at step 1700: 0.305425
+2023-09-19 21:39:10 INFO     Training average negative_sample_loss at step 1700: 0.548854
+2023-09-19 21:39:10 INFO     Training average loss at step 1700: 0.453779
+2023-09-19 21:39:14 INFO     Training average regularization at step 1800: 0.029769
+2023-09-19 21:39:14 INFO     Training average positive_sample_loss at step 1800: 0.261553
+2023-09-19 21:39:14 INFO     Training average negative_sample_loss at step 1800: 0.523993
+2023-09-19 21:39:14 INFO     Training average loss at step 1800: 0.422542
+2023-09-19 21:39:17 INFO     Training average regularization at step 1900: 0.033209
+2023-09-19 21:39:17 INFO     Training average positive_sample_loss at step 1900: 0.223827
+2023-09-19 21:39:17 INFO     Training average negative_sample_loss at step 1900: 0.494717
+2023-09-19 21:39:17 INFO     Training average loss at step 1900: 0.392481
+2023-09-19 21:39:21 INFO     Training average regularization at step 2000: 0.036823
+2023-09-19 21:39:21 INFO     Training average positive_sample_loss at step 2000: 0.217109
+2023-09-19 21:39:21 INFO     Training average negative_sample_loss at step 2000: 0.467991
+2023-09-19 21:39:21 INFO     Training average loss at step 2000: 0.379373
+2023-09-19 21:39:21 INFO     Evaluating on Valid Dataset...
+2023-09-19 21:39:22 INFO     Evaluating the model... (0/136)
+2023-09-19 21:39:41 INFO     Valid MRR at step 2000: 0.440762
+2023-09-19 21:39:41 INFO     Valid MR at step 2000: 2987.513812
+2023-09-19 21:39:41 INFO     Valid HITS@1 at step 2000: 0.373849
+2023-09-19 21:39:41 INFO     Valid HITS@3 at step 2000: 0.484346
+2023-09-19 21:39:41 INFO     Valid HITS@10 at step 2000: 0.552486
+2023-09-19 21:39:45 INFO     Training average regularization at step 2100: 0.040445
+2023-09-19 21:39:45 INFO     Training average positive_sample_loss at step 2100: 0.216468
+2023-09-19 21:39:45 INFO     Training average negative_sample_loss at step 2100: 0.446596
+2023-09-19 21:39:45 INFO     Training average loss at step 2100: 0.371977
+2023-09-19 21:39:48 INFO     Training average regularization at step 2200: 0.044018
+2023-09-19 21:39:48 INFO     Training average positive_sample_loss at step 2200: 0.214951
+2023-09-19 21:39:48 INFO     Training average negative_sample_loss at step 2200: 0.427107
+2023-09-19 21:39:48 INFO     Training average loss at step 2200: 0.365047
+2023-09-19 21:39:52 INFO     Training average regularization at step 2300: 0.047451
+2023-09-19 21:39:52 INFO     Training average positive_sample_loss at step 2300: 0.207143
+2023-09-19 21:39:52 INFO     Training average negative_sample_loss at step 2300: 0.404080
+2023-09-19 21:39:52 INFO     Training average loss at step 2300: 0.353063
+2023-09-19 21:39:56 INFO     Training average regularization at step 2400: 0.050803
+2023-09-19 21:39:56 INFO     Training average positive_sample_loss at step 2400: 0.166562
+2023-09-19 21:39:56 INFO     Training average negative_sample_loss at step 2400: 0.377334
+2023-09-19 21:39:56 INFO     Training average loss at step 2400: 0.322750
+2023-09-19 21:39:59 INFO     Training average regularization at step 2500: 0.054258
+2023-09-19 21:39:59 INFO     Training average positive_sample_loss at step 2500: 0.143699
+2023-09-19 21:39:59 INFO     Training average negative_sample_loss at step 2500: 0.345581
+2023-09-19 21:39:59 INFO     Training average loss at step 2500: 0.298897
+2023-09-19 21:40:03 INFO     Training average regularization at step 2600: 0.057707
+2023-09-19 21:40:03 INFO     Training average positive_sample_loss at step 2600: 0.144085
+2023-09-19 21:40:03 INFO     Training average negative_sample_loss at step 2600: 0.326564
+2023-09-19 21:40:03 INFO     Training average loss at step 2600: 0.293031
+2023-09-19 21:40:06 INFO     Training average regularization at step 2700: 0.060994
+2023-09-19 21:40:06 INFO     Training average positive_sample_loss at step 2700: 0.144098
+2023-09-19 21:40:06 INFO     Training average negative_sample_loss at step 2700: 0.313356
+2023-09-19 21:40:06 INFO     Training average loss at step 2700: 0.289721
+2023-09-19 21:40:09 INFO     Training average regularization at step 2800: 0.064142
+2023-09-19 21:40:09 INFO     Training average positive_sample_loss at step 2800: 0.145457
+2023-09-19 21:40:09 INFO     Training average negative_sample_loss at step 2800: 0.299762
+2023-09-19 21:40:09 INFO     Training average loss at step 2800: 0.286752
+2023-09-19 21:40:13 INFO     Training average regularization at step 2900: 0.067127
+2023-09-19 21:40:13 INFO     Training average positive_sample_loss at step 2900: 0.144438
+2023-09-19 21:40:13 INFO     Training average negative_sample_loss at step 2900: 0.285664
+2023-09-19 21:40:13 INFO     Training average loss at step 2900: 0.282177
+2023-09-19 21:40:17 INFO     Training average regularization at step 3000: 0.069854
+2023-09-19 21:40:17 INFO     Training average positive_sample_loss at step 3000: 0.101239
+2023-09-19 21:40:17 INFO     Training average negative_sample_loss at step 3000: 0.261218
+2023-09-19 21:40:17 INFO     Training average loss at step 3000: 0.251083
+2023-09-19 21:40:17 INFO     Evaluating on Valid Dataset...
+2023-09-19 21:40:18 INFO     Evaluating the model... (0/136)
+2023-09-19 21:40:39 INFO     Valid MRR at step 3000: 0.435703
+2023-09-19 21:40:39 INFO     Valid MR at step 3000: 2495.607735
+2023-09-19 21:40:39 INFO     Valid HITS@1 at step 3000: 0.379374
+2023-09-19 21:40:39 INFO     Valid HITS@3 at step 3000: 0.456722
+2023-09-19 21:40:39 INFO     Valid HITS@10 at step 3000: 0.537753
+2023-09-19 21:40:43 INFO     Training average regularization at step 3100: 0.072323
+2023-09-19 21:40:43 INFO     Training average positive_sample_loss at step 3100: 0.094969
+2023-09-19 21:40:43 INFO     Training average negative_sample_loss at step 3100: 0.243165
+2023-09-19 21:40:43 INFO     Training average loss at step 3100: 0.241390
+2023-09-19 21:40:46 INFO     Training average regularization at step 3200: 0.074776
+2023-09-19 21:40:46 INFO     Training average positive_sample_loss at step 3200: 0.097326
+2023-09-19 21:40:46 INFO     Training average negative_sample_loss at step 3200: 0.232967
+2023-09-19 21:40:46 INFO     Training average loss at step 3200: 0.239923
+2023-09-19 21:40:50 INFO     Training average regularization at step 3300: 0.077158
+2023-09-19 21:40:50 INFO     Training average positive_sample_loss at step 3300: 0.100475
+2023-09-19 21:40:50 INFO     Training average negative_sample_loss at step 3300: 0.223621
+2023-09-19 21:40:50 INFO     Training average loss at step 3300: 0.239206
+2023-09-19 21:40:53 INFO     Training average regularization at step 3400: 0.079454
+2023-09-19 21:40:53 INFO     Training average positive_sample_loss at step 3400: 0.098297
+2023-09-19 21:40:53 INFO     Training average negative_sample_loss at step 3400: 0.214606
+2023-09-19 21:40:53 INFO     Training average loss at step 3400: 0.235906
+2023-09-19 21:40:57 INFO     Training average regularization at step 3500: 0.081626
+2023-09-19 21:40:57 INFO     Training average positive_sample_loss at step 3500: 0.099711
+2023-09-19 21:40:57 INFO     Training average negative_sample_loss at step 3500: 0.210157
+2023-09-19 21:40:57 INFO     Training average loss at step 3500: 0.236560
+2023-09-19 21:41:01 INFO     Training average regularization at step 3600: 0.083457
+2023-09-19 21:41:01 INFO     Training average positive_sample_loss at step 3600: 0.065983
+2023-09-19 21:41:01 INFO     Training average negative_sample_loss at step 3600: 0.187880
+2023-09-19 21:41:01 INFO     Training average loss at step 3600: 0.210388
+2023-09-19 21:41:05 INFO     Training average regularization at step 3700: 0.084940
+2023-09-19 21:41:05 INFO     Training average positive_sample_loss at step 3700: 0.067512
+2023-09-19 21:41:05 INFO     Training average negative_sample_loss at step 3700: 0.180034
+2023-09-19 21:41:05 INFO     Training average loss at step 3700: 0.208714
+2023-09-19 21:41:08 INFO     Training average regularization at step 3800: 0.086484
+2023-09-19 21:41:08 INFO     Training average positive_sample_loss at step 3800: 0.070050
+2023-09-19 21:41:08 INFO     Training average negative_sample_loss at step 3800: 0.176840
+2023-09-19 21:41:08 INFO     Training average loss at step 3800: 0.209929
+2023-09-19 21:41:12 INFO     Training average regularization at step 3900: 0.088065
+2023-09-19 21:41:12 INFO     Training average positive_sample_loss at step 3900: 0.073485
+2023-09-19 21:41:12 INFO     Training average negative_sample_loss at step 3900: 0.170094
+2023-09-19 21:41:12 INFO     Training average loss at step 3900: 0.209854
+2023-09-19 21:41:15 INFO     Training average regularization at step 4000: 0.089613
+2023-09-19 21:41:15 INFO     Training average positive_sample_loss at step 4000: 0.075142
+2023-09-19 21:41:15 INFO     Training average negative_sample_loss at step 4000: 0.166264
+2023-09-19 21:41:15 INFO     Training average loss at step 4000: 0.210316
+2023-09-19 21:41:15 INFO     Evaluating on Valid Dataset...
+2023-09-19 21:41:16 INFO     Evaluating the model... (0/136)
+2023-09-19 21:41:35 INFO     Valid MRR at step 4000: 0.437007
+2023-09-19 21:41:35 INFO     Valid MR at step 4000: 2270.261510
+2023-09-19 21:41:35 INFO     Valid HITS@1 at step 4000: 0.377532
+2023-09-19 21:41:35 INFO     Valid HITS@3 at step 4000: 0.454880
+2023-09-19 21:41:35 INFO     Valid HITS@10 at step 4000: 0.552486
+2023-09-19 21:41:39 INFO     Training average regularization at step 4100: 0.091114
+2023-09-19 21:41:39 INFO     Training average positive_sample_loss at step 4100: 0.075140
+2023-09-19 21:41:39 INFO     Training average negative_sample_loss at step 4100: 0.164306
+2023-09-19 21:41:39 INFO     Training average loss at step 4100: 0.210837
+2023-09-19 21:41:42 INFO     Training average regularization at step 4200: 0.092229
+2023-09-19 21:41:42 INFO     Training average positive_sample_loss at step 4200: 0.049316
+2023-09-19 21:41:42 INFO     Training average negative_sample_loss at step 4200: 0.150036
+2023-09-19 21:41:42 INFO     Training average loss at step 4200: 0.191905
+2023-09-19 21:41:45 INFO     Training average regularization at step 4300: 0.093011
+2023-09-19 21:41:45 INFO     Training average positive_sample_loss at step 4300: 0.053661
+2023-09-19 21:41:45 INFO     Training average negative_sample_loss at step 4300: 0.144574
+2023-09-19 21:41:45 INFO     Training average loss at step 4300: 0.192129
+2023-09-19 21:41:49 INFO     Training average regularization at step 4400: 0.093975
+2023-09-19 21:41:49 INFO     Training average positive_sample_loss at step 4400: 0.055588
+2023-09-19 21:41:49 INFO     Training average negative_sample_loss at step 4400: 0.139921
+2023-09-19 21:41:49 INFO     Training average loss at step 4400: 0.191729
+2023-09-19 21:41:52 INFO     Training average regularization at step 4500: 0.095023
+2023-09-19 21:41:52 INFO     Training average positive_sample_loss at step 4500: 0.059345
+2023-09-19 21:41:52 INFO     Training average negative_sample_loss at step 4500: 0.138833
+2023-09-19 21:41:52 INFO     Training average loss at step 4500: 0.194112
+2023-09-19 21:41:55 INFO     Training average regularization at step 4600: 0.096158
+2023-09-19 21:41:55 INFO     Training average positive_sample_loss at step 4600: 0.059604
+2023-09-19 21:41:55 INFO     Training average negative_sample_loss at step 4600: 0.137124
+2023-09-19 21:41:55 INFO     Training average loss at step 4600: 0.194522
+2023-09-19 21:41:59 INFO     Training average regularization at step 4700: 0.097241
+2023-09-19 21:41:59 INFO     Training average positive_sample_loss at step 4700: 0.056779
+2023-09-19 21:41:59 INFO     Training average negative_sample_loss at step 4700: 0.133085
+2023-09-19 21:41:59 INFO     Training average loss at step 4700: 0.192173
+2023-09-19 21:42:02 INFO     Training average regularization at step 4800: 0.097770
+2023-09-19 21:42:02 INFO     Training average positive_sample_loss at step 4800: 0.041070
+2023-09-19 21:42:02 INFO     Training average negative_sample_loss at step 4800: 0.125209
+2023-09-19 21:42:02 INFO     Training average loss at step 4800: 0.180910
+2023-09-19 21:42:06 INFO     Training average regularization at step 4900: 0.098145
+2023-09-19 21:42:06 INFO     Training average positive_sample_loss at step 4900: 0.044700
+2023-09-19 21:42:06 INFO     Training average negative_sample_loss at step 4900: 0.120008
+2023-09-19 21:42:06 INFO     Training average loss at step 4900: 0.180499
+2023-09-19 21:42:10 INFO     Change learning_rate to 0.000100 at step 5000
+2023-09-19 21:42:10 INFO     Training average regularization at step 5000: 0.098754
+2023-09-19 21:42:10 INFO     Training average positive_sample_loss at step 5000: 0.047674
+2023-09-19 21:42:10 INFO     Training average negative_sample_loss at step 5000: 0.119728
+2023-09-19 21:42:10 INFO     Training average loss at step 5000: 0.182455
+2023-09-19 21:42:10 INFO     Evaluating on Valid Dataset...
+2023-09-19 21:42:11 INFO     Evaluating the model... (0/136)
+2023-09-19 21:42:31 INFO     Valid MRR at step 5000: 0.439424
+2023-09-19 21:42:31 INFO     Valid MR at step 5000: 2024.186004
+2023-09-19 21:42:31 INFO     Valid HITS@1 at step 5000: 0.372007
+2023-09-19 21:42:31 INFO     Valid HITS@3 at step 5000: 0.462247
+2023-09-19 21:42:31 INFO     Valid HITS@10 at step 5000: 0.572744
+2023-09-19 21:42:34 INFO     Training average regularization at step 5100: 0.098192
+2023-09-19 21:42:34 INFO     Training average positive_sample_loss at step 5100: 0.051487
+2023-09-19 21:42:34 INFO     Training average negative_sample_loss at step 5100: 0.120231
+2023-09-19 21:42:34 INFO     Training average loss at step 5100: 0.184051
+2023-09-19 21:42:38 INFO     Training average regularization at step 5200: 0.097384
+2023-09-19 21:42:38 INFO     Training average positive_sample_loss at step 5200: 0.055634
+2023-09-19 21:42:38 INFO     Training average negative_sample_loss at step 5200: 0.120476
+2023-09-19 21:42:38 INFO     Training average loss at step 5200: 0.185439
+2023-09-19 21:42:41 INFO     Training average regularization at step 5300: 0.097008
+2023-09-19 21:42:41 INFO     Training average positive_sample_loss at step 5300: 0.052350
+2023-09-19 21:42:41 INFO     Training average negative_sample_loss at step 5300: 0.117496
+2023-09-19 21:42:41 INFO     Training average loss at step 5300: 0.181931
+2023-09-19 21:42:45 INFO     Training average regularization at step 5400: 0.096760
+2023-09-19 21:42:45 INFO     Training average positive_sample_loss at step 5400: 0.045481
+2023-09-19 21:42:45 INFO     Training average negative_sample_loss at step 5400: 0.116194
+2023-09-19 21:42:45 INFO     Training average loss at step 5400: 0.177598
+2023-09-19 21:42:48 INFO     Training average regularization at step 5500: 0.096605
+2023-09-19 21:42:48 INFO     Training average positive_sample_loss at step 5500: 0.045843
+2023-09-19 21:42:48 INFO     Training average negative_sample_loss at step 5500: 0.115021
+2023-09-19 21:42:48 INFO     Training average loss at step 5500: 0.177037
+2023-09-19 21:42:52 INFO     Training average regularization at step 5600: 0.096533
+2023-09-19 21:42:52 INFO     Training average positive_sample_loss at step 5600: 0.048251
+2023-09-19 21:42:52 INFO     Training average negative_sample_loss at step 5600: 0.115781
+2023-09-19 21:42:52 INFO     Training average loss at step 5600: 0.178549
+2023-09-19 21:42:55 INFO     Training average regularization at step 5700: 0.096524
+2023-09-19 21:42:55 INFO     Training average positive_sample_loss at step 5700: 0.048815
+2023-09-19 21:42:55 INFO     Training average negative_sample_loss at step 5700: 0.115933
+2023-09-19 21:42:55 INFO     Training average loss at step 5700: 0.178898
+2023-09-19 21:42:58 INFO     Training average regularization at step 5800: 0.096570
+2023-09-19 21:42:58 INFO     Training average positive_sample_loss at step 5800: 0.050530
+2023-09-19 21:42:58 INFO     Training average negative_sample_loss at step 5800: 0.114809
+2023-09-19 21:42:58 INFO     Training average loss at step 5800: 0.179239
+2023-09-19 21:43:02 INFO     Training average regularization at step 5900: 0.096643
+2023-09-19 21:43:02 INFO     Training average positive_sample_loss at step 5900: 0.047545
+2023-09-19 21:43:02 INFO     Training average negative_sample_loss at step 5900: 0.114255
+2023-09-19 21:43:02 INFO     Training average loss at step 5900: 0.177544
+2023-09-19 21:43:06 INFO     Training average regularization at step 6000: 0.096699
+2023-09-19 21:43:06 INFO     Training average positive_sample_loss at step 6000: 0.045705
+2023-09-19 21:43:06 INFO     Training average negative_sample_loss at step 6000: 0.113877
+2023-09-19 21:43:06 INFO     Training average loss at step 6000: 0.176490
+2023-09-19 21:43:06 INFO     Evaluating on Valid Dataset...
+2023-09-19 21:43:07 INFO     Evaluating the model... (0/136)
+2023-09-19 21:43:26 INFO     Valid MRR at step 6000: 0.439366
+2023-09-19 21:43:26 INFO     Valid MR at step 6000: 2037.014733
+2023-09-19 21:43:26 INFO     Valid HITS@1 at step 6000: 0.372007
+2023-09-19 21:43:26 INFO     Valid HITS@3 at step 6000: 0.460405
+2023-09-19 21:43:26 INFO     Valid HITS@10 at step 6000: 0.570902
+2023-09-19 21:43:29 INFO     Training average regularization at step 6100: 0.096753
+2023-09-19 21:43:29 INFO     Training average positive_sample_loss at step 6100: 0.046236
+2023-09-19 21:43:29 INFO     Training average negative_sample_loss at step 6100: 0.114534
+2023-09-19 21:43:29 INFO     Training average loss at step 6100: 0.177138
+2023-09-19 21:43:33 INFO     Training average regularization at step 6200: 0.096823
+2023-09-19 21:43:33 INFO     Training average positive_sample_loss at step 6200: 0.047291
+2023-09-19 21:43:33 INFO     Training average negative_sample_loss at step 6200: 0.114021
+2023-09-19 21:43:33 INFO     Training average loss at step 6200: 0.177479
+2023-09-19 21:43:36 INFO     Training average regularization at step 6300: 0.096905
+2023-09-19 21:43:36 INFO     Training average positive_sample_loss at step 6300: 0.046941
+2023-09-19 21:43:36 INFO     Training average negative_sample_loss at step 6300: 0.113141
+2023-09-19 21:43:36 INFO     Training average loss at step 6300: 0.176946
+2023-09-19 21:43:39 INFO     Training average regularization at step 6400: 0.096988
+2023-09-19 21:43:39 INFO     Training average positive_sample_loss at step 6400: 0.047888
+2023-09-19 21:43:39 INFO     Training average negative_sample_loss at step 6400: 0.113432
+2023-09-19 21:43:39 INFO     Training average loss at step 6400: 0.177648
+2023-09-19 21:43:43 INFO     Training average regularization at step 6500: 0.097074
+2023-09-19 21:43:43 INFO     Training average positive_sample_loss at step 6500: 0.046100
+2023-09-19 21:43:43 INFO     Training average negative_sample_loss at step 6500: 0.112374
+2023-09-19 21:43:43 INFO     Training average loss at step 6500: 0.176311
+2023-09-19 21:43:46 INFO     Training average regularization at step 6600: 0.097136
+2023-09-19 21:43:46 INFO     Training average positive_sample_loss at step 6600: 0.044997
+2023-09-19 21:43:46 INFO     Training average negative_sample_loss at step 6600: 0.111739
+2023-09-19 21:43:46 INFO     Training average loss at step 6600: 0.175504
+2023-09-19 21:43:49 INFO     Training average regularization at step 6700: 0.097199
+2023-09-19 21:43:49 INFO     Training average positive_sample_loss at step 6700: 0.045418
+2023-09-19 21:43:49 INFO     Training average negative_sample_loss at step 6700: 0.111773
+2023-09-19 21:43:49 INFO     Training average loss at step 6700: 0.175795
+2023-09-19 21:43:53 INFO     Training average regularization at step 6800: 0.097274
+2023-09-19 21:43:53 INFO     Training average positive_sample_loss at step 6800: 0.046158
+2023-09-19 21:43:53 INFO     Training average negative_sample_loss at step 6800: 0.113003
+2023-09-19 21:43:53 INFO     Training average loss at step 6800: 0.176854
+2023-09-19 21:43:56 INFO     Training average regularization at step 6900: 0.097354
+2023-09-19 21:43:56 INFO     Training average positive_sample_loss at step 6900: 0.046287
+2023-09-19 21:43:56 INFO     Training average negative_sample_loss at step 6900: 0.111744
+2023-09-19 21:43:56 INFO     Training average loss at step 6900: 0.176369
+2023-09-19 21:44:00 INFO     Training average regularization at step 7000: 0.097440
+2023-09-19 21:44:00 INFO     Training average positive_sample_loss at step 7000: 0.046102
+2023-09-19 21:44:00 INFO     Training average negative_sample_loss at step 7000: 0.111176
+2023-09-19 21:44:00 INFO     Training average loss at step 7000: 0.176079
+2023-09-19 21:44:00 INFO     Evaluating on Valid Dataset...
+2023-09-19 21:44:00 INFO     Evaluating the model... (0/136)
+2023-09-19 21:44:19 INFO     Valid MRR at step 7000: 0.435238
+2023-09-19 21:44:19 INFO     Valid MR at step 7000: 2023.311234
+2023-09-19 21:44:19 INFO     Valid HITS@1 at step 7000: 0.364641
+2023-09-19 21:44:19 INFO     Valid HITS@3 at step 7000: 0.458564
+2023-09-19 21:44:19 INFO     Valid HITS@10 at step 7000: 0.570902
+2023-09-19 21:44:23 INFO     Training average regularization at step 7100: 0.097516
+2023-09-19 21:44:23 INFO     Training average positive_sample_loss at step 7100: 0.043616
+2023-09-19 21:44:23 INFO     Training average negative_sample_loss at step 7100: 0.110495
+2023-09-19 21:44:23 INFO     Training average loss at step 7100: 0.174571
+2023-09-19 21:44:27 INFO     Training average regularization at step 7200: 0.097572
+2023-09-19 21:44:27 INFO     Training average positive_sample_loss at step 7200: 0.045072
+2023-09-19 21:44:27 INFO     Training average negative_sample_loss at step 7200: 0.110239
+2023-09-19 21:44:27 INFO     Training average loss at step 7200: 0.175227
+2023-09-19 21:44:30 INFO     Training average regularization at step 7300: 0.097640
+2023-09-19 21:44:30 INFO     Training average positive_sample_loss at step 7300: 0.044607
+2023-09-19 21:44:30 INFO     Training average negative_sample_loss at step 7300: 0.110535
+2023-09-19 21:44:30 INFO     Training average loss at step 7300: 0.175211
+2023-09-19 21:44:34 INFO     Training average regularization at step 7400: 0.097708
+2023-09-19 21:44:34 INFO     Training average positive_sample_loss at step 7400: 0.044334
+2023-09-19 21:44:34 INFO     Training average negative_sample_loss at step 7400: 0.109607
+2023-09-19 21:44:34 INFO     Training average loss at step 7400: 0.174678
+2023-09-19 21:44:37 INFO     Training average regularization at step 7500: 0.097781
+2023-09-19 21:44:37 INFO     Training average positive_sample_loss at step 7500: 0.045545
+2023-09-19 21:44:37 INFO     Training average negative_sample_loss at step 7500: 0.110272
+2023-09-19 21:44:37 INFO     Training average loss at step 7500: 0.175689
+2023-09-19 21:44:40 INFO     Training average regularization at step 7600: 0.097865
+2023-09-19 21:44:40 INFO     Training average positive_sample_loss at step 7600: 0.046262
+2023-09-19 21:44:40 INFO     Training average negative_sample_loss at step 7600: 0.110633
+2023-09-19 21:44:40 INFO     Training average loss at step 7600: 0.176313
+2023-09-19 21:44:44 INFO     Training average regularization at step 7700: 0.097936
+2023-09-19 21:44:44 INFO     Training average positive_sample_loss at step 7700: 0.043105
+2023-09-19 21:44:44 INFO     Training average negative_sample_loss at step 7700: 0.109767
+2023-09-19 21:44:44 INFO     Training average loss at step 7700: 0.174372
+2023-09-19 21:44:48 INFO     Training average regularization at step 7800: 0.097986
+2023-09-19 21:44:48 INFO     Training average positive_sample_loss at step 7800: 0.043231
+2023-09-19 21:44:48 INFO     Training average negative_sample_loss at step 7800: 0.108278
+2023-09-19 21:44:48 INFO     Training average loss at step 7800: 0.173741
+2023-09-19 21:44:51 INFO     Training average regularization at step 7900: 0.098045
+2023-09-19 21:44:51 INFO     Training average positive_sample_loss at step 7900: 0.043343
+2023-09-19 21:44:51 INFO     Training average negative_sample_loss at step 7900: 0.108827
+2023-09-19 21:44:51 INFO     Training average loss at step 7900: 0.174131
+2023-09-19 21:44:55 INFO     Training average regularization at step 8000: 0.098111
+2023-09-19 21:44:55 INFO     Training average positive_sample_loss at step 8000: 0.044548
+2023-09-19 21:44:55 INFO     Training average negative_sample_loss at step 8000: 0.107601
+2023-09-19 21:44:55 INFO     Training average loss at step 8000: 0.174186
+2023-09-19 21:44:55 INFO     Evaluating on Valid Dataset...
+2023-09-19 21:44:55 INFO     Evaluating the model... (0/136)
+2023-09-19 21:45:14 INFO     Valid MRR at step 8000: 0.434028
+2023-09-19 21:45:14 INFO     Valid MR at step 8000: 1995.403315
+2023-09-19 21:45:14 INFO     Valid HITS@1 at step 8000: 0.362799
+2023-09-19 21:45:14 INFO     Valid HITS@3 at step 8000: 0.454880
+2023-09-19 21:45:14 INFO     Valid HITS@10 at step 8000: 0.570902
+2023-09-19 21:45:17 INFO     Training average regularization at step 8100: 0.098182
+2023-09-19 21:45:17 INFO     Training average positive_sample_loss at step 8100: 0.044501
+2023-09-19 21:45:17 INFO     Training average negative_sample_loss at step 8100: 0.108334
+2023-09-19 21:45:17 INFO     Training average loss at step 8100: 0.174600
+2023-09-19 21:45:21 INFO     Training average regularization at step 8200: 0.098265
+2023-09-19 21:45:21 INFO     Training average positive_sample_loss at step 8200: 0.044893
+2023-09-19 21:45:21 INFO     Training average negative_sample_loss at step 8200: 0.107942
+2023-09-19 21:45:21 INFO     Training average loss at step 8200: 0.174682
+2023-09-19 21:45:24 INFO     Training average regularization at step 8300: 0.098331
+2023-09-19 21:45:24 INFO     Training average positive_sample_loss at step 8300: 0.042442
+2023-09-19 21:45:24 INFO     Training average negative_sample_loss at step 8300: 0.108521
+2023-09-19 21:45:24 INFO     Training average loss at step 8300: 0.173813
+2023-09-19 21:45:27 INFO     Training average regularization at step 8400: 0.098380
+2023-09-19 21:45:27 INFO     Training average positive_sample_loss at step 8400: 0.042536
+2023-09-19 21:45:27 INFO     Training average negative_sample_loss at step 8400: 0.107114
+2023-09-19 21:45:27 INFO     Training average loss at step 8400: 0.173205
+2023-09-19 21:45:31 INFO     Training average regularization at step 8500: 0.098433
+2023-09-19 21:45:31 INFO     Training average positive_sample_loss at step 8500: 0.042870
+2023-09-19 21:45:31 INFO     Training average negative_sample_loss at step 8500: 0.105839
+2023-09-19 21:45:31 INFO     Training average loss at step 8500: 0.172788
+2023-09-19 21:45:34 INFO     Training average regularization at step 8600: 0.098497
+2023-09-19 21:45:34 INFO     Training average positive_sample_loss at step 8600: 0.043859
+2023-09-19 21:45:34 INFO     Training average negative_sample_loss at step 8600: 0.107604
+2023-09-19 21:45:34 INFO     Training average loss at step 8600: 0.174228
+2023-09-19 21:45:37 INFO     Training average regularization at step 8700: 0.098564
+2023-09-19 21:45:37 INFO     Training average positive_sample_loss at step 8700: 0.043581
+2023-09-19 21:45:37 INFO     Training average negative_sample_loss at step 8700: 0.105648
+2023-09-19 21:45:37 INFO     Training average loss at step 8700: 0.173179
+2023-09-19 21:45:41 INFO     Training average regularization at step 8800: 0.098639
+2023-09-19 21:45:41 INFO     Training average positive_sample_loss at step 8800: 0.043422
+2023-09-19 21:45:41 INFO     Training average negative_sample_loss at step 8800: 0.107035
+2023-09-19 21:45:41 INFO     Training average loss at step 8800: 0.173867
+2023-09-19 21:45:45 INFO     Training average regularization at step 8900: 0.098691
+2023-09-19 21:45:45 INFO     Training average positive_sample_loss at step 8900: 0.041859
+2023-09-19 21:45:45 INFO     Training average negative_sample_loss at step 8900: 0.106476
+2023-09-19 21:45:45 INFO     Training average loss at step 8900: 0.172859
+2023-09-19 21:45:48 INFO     Training average regularization at step 9000: 0.098740
+2023-09-19 21:45:48 INFO     Training average positive_sample_loss at step 9000: 0.041845
+2023-09-19 21:45:48 INFO     Training average negative_sample_loss at step 9000: 0.105165
+2023-09-19 21:45:48 INFO     Training average loss at step 9000: 0.172245
+2023-09-19 21:45:48 INFO     Evaluating on Valid Dataset...
+2023-09-19 21:45:49 INFO     Evaluating the model... (0/136)
+2023-09-19 21:46:08 INFO     Valid MRR at step 9000: 0.435479
+2023-09-19 21:46:08 INFO     Valid MR at step 9000: 1977.801105
+2023-09-19 21:46:08 INFO     Valid HITS@1 at step 9000: 0.364641
+2023-09-19 21:46:08 INFO     Valid HITS@3 at step 9000: 0.456722
+2023-09-19 21:46:08 INFO     Valid HITS@10 at step 9000: 0.572744
+2023-09-19 21:46:11 INFO     Training average regularization at step 9100: 0.098790
+2023-09-19 21:46:11 INFO     Training average positive_sample_loss at step 9100: 0.042487
+2023-09-19 21:46:11 INFO     Training average negative_sample_loss at step 9100: 0.104841
+2023-09-19 21:46:11 INFO     Training average loss at step 9100: 0.172454
+2023-09-19 21:46:15 INFO     Training average regularization at step 9200: 0.098848
+2023-09-19 21:46:15 INFO     Training average positive_sample_loss at step 9200: 0.042508
+2023-09-19 21:46:15 INFO     Training average negative_sample_loss at step 9200: 0.104850
+2023-09-19 21:46:15 INFO     Training average loss at step 9200: 0.172526
+2023-09-19 21:46:19 INFO     Training average regularization at step 9300: 0.098913
+2023-09-19 21:46:19 INFO     Training average positive_sample_loss at step 9300: 0.043212
+2023-09-19 21:46:19 INFO     Training average negative_sample_loss at step 9300: 0.105583
+2023-09-19 21:46:19 INFO     Training average loss at step 9300: 0.173310
+2023-09-19 21:46:23 INFO     Training average regularization at step 9400: 0.098982
+2023-09-19 21:46:23 INFO     Training average positive_sample_loss at step 9400: 0.042658
+2023-09-19 21:46:23 INFO     Training average negative_sample_loss at step 9400: 0.105035
+2023-09-19 21:46:23 INFO     Training average loss at step 9400: 0.172829
+2023-09-19 21:46:27 INFO     Training average regularization at step 9500: 0.099029
+2023-09-19 21:46:27 INFO     Training average positive_sample_loss at step 9500: 0.041281
+2023-09-19 21:46:27 INFO     Training average negative_sample_loss at step 9500: 0.104143
+2023-09-19 21:46:27 INFO     Training average loss at step 9500: 0.171741
+2023-09-19 21:46:31 INFO     Training average regularization at step 9600: 0.099069
+2023-09-19 21:46:31 INFO     Training average positive_sample_loss at step 9600: 0.041306
+2023-09-19 21:46:31 INFO     Training average negative_sample_loss at step 9600: 0.103754
+2023-09-19 21:46:31 INFO     Training average loss at step 9600: 0.171599
+2023-09-19 21:46:34 INFO     Training average regularization at step 9700: 0.099116
+2023-09-19 21:46:34 INFO     Training average positive_sample_loss at step 9700: 0.041459
+2023-09-19 21:46:34 INFO     Training average negative_sample_loss at step 9700: 0.104353
+2023-09-19 21:46:34 INFO     Training average loss at step 9700: 0.172022
+2023-09-19 21:46:38 INFO     Training average regularization at step 9800: 0.099171
+2023-09-19 21:46:38 INFO     Training average positive_sample_loss at step 9800: 0.042218
+2023-09-19 21:46:38 INFO     Training average negative_sample_loss at step 9800: 0.104300
+2023-09-19 21:46:38 INFO     Training average loss at step 9800: 0.172430
+2023-09-19 21:46:42 INFO     Training average regularization at step 9900: 0.099232
+2023-09-19 21:46:42 INFO     Training average positive_sample_loss at step 9900: 0.042698
+2023-09-19 21:46:42 INFO     Training average negative_sample_loss at step 9900: 0.104206
+2023-09-19 21:46:42 INFO     Training average loss at step 9900: 0.172684
+2023-09-19 21:46:46 INFO     Evaluating on Valid Dataset...
+2023-09-19 21:46:47 INFO     Evaluating the model... (0/136)
+2023-09-19 21:47:06 INFO     Valid MRR at step 9999: 0.436111
+2023-09-19 21:47:06 INFO     Valid MR at step 9999: 1988.110497
+2023-09-19 21:47:06 INFO     Valid HITS@1 at step 9999: 0.364641
+2023-09-19 21:47:06 INFO     Valid HITS@3 at step 9999: 0.456722
+2023-09-19 21:47:06 INFO     Valid HITS@10 at step 9999: 0.572744
+2023-09-19 21:47:06 INFO     Evaluating on Test Dataset...
+2023-09-19 21:47:06 INFO     Evaluating the model... (0/998)
+2023-09-19 21:49:31 INFO     Test MRR at step 9999: 0.395303
+2023-09-19 21:49:31 INFO     Test MR at step 9999: 2348.797094
+2023-09-19 21:49:31 INFO     Test HITS@1 at step 9999: 0.315381
+2023-09-19 21:49:31 INFO     Test HITS@3 at step 9999: 0.434369
+2023-09-19 21:49:31 INFO     Test HITS@10 at step 9999: 0.555110
